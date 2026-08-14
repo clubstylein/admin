@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { AdminSidebar } from "@/components/admin-sidebar";
+import { AdminNav } from "@/components/admin-nav";
 
 export const metadata: Metadata = {
   title: "ClubStyle Back Office",
@@ -15,9 +15,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <AdminSidebar />
+        <AdminNav />
 
-        <main className="ml-64 min-h-screen bg-gray-50 p-8">
+        <main className="min-h-screen bg-gray-50 p-8">
           {children}
         </main>
       </body>
